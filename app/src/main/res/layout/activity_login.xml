@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@drawable/view"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RIDE WITH ME"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textSize="50sp"
+        android:textColor="#FF0000"
+        android:textStyle="bold"
+        />
+
+
+    <EditText
+        android:id="@+id/login_EDT_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:textSize="45sp"
+        android:digits="QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm0123456789"
+        android:textColorHint="#05000C"
+        android:maxLines="1"
+        android:maxLength="15"
+        />
+
+    <EditText
+        android:id="@+id/login_EDT_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/login_EDT_username"
+        android:layout_marginTop="25dp"
+        android:textSize="45sp"
+        android:textFontWeight="15"
+        android:digits="QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm0123456789"
+        android:textColorHint="#05000C"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/login_BTN_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:text="Login"
+        android:layout_below="@id/login_EDT_password"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="25dp"
+
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/login_BTN_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:text="register"
+        android:layout_below="@id/login_BTN_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot your password?"
+        android:clickable="true"
+        android:textColor="#3F51B5"
+        android:textSize="15sp"
+        android:layout_below="@id/login_BTN_register"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>
